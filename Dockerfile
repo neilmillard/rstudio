@@ -19,4 +19,4 @@ RUN R -f /install-packages.r && \
     chmod +x /start-rserver.sh
 EXPOSE 8787
 
-CMD['start-rserver.sh']
+CMD ['start-rserver.sh']
