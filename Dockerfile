@@ -1,8 +1,8 @@
 FROM centos
 
 RUN yum update -y
-RUN yum install -y wget python-pip vim tmux curl git bzip2 epel-release && \
-    yum install -y R unixODBC unixODBC-devel libxml2-devel libcurl-devel openssl-devel sssd-tools initscripts krb5-workstation krb5-libs krb5-auth-dialog enchant python-devel
+RUN yum install -y wget vim tmux curl git bzip2 epel-release && \
+    yum install -y python-pip R unixODBC unixODBC-devel libxml2-devel libcurl-devel openssl-devel sssd-tools initscripts krb5-workstation krb5-libs krb5-auth-dialog enchant python-devel
 COPY install-packages.r /install-packages.r
 COPY requirements.txt /requirements.txt
 COPY ClouderaImpalaODBC-2.5.41.1029-1.el5.x86_64.rpm /ClouderaImpalaODBC-2.5.41.1029-1.el5.x86_64.rpm
