@@ -1,4 +1,4 @@
-FROM neilmillard/rstudio:base
+FROM neilmillard/rstudio:rserver
 
 COPY install-packages.r /install-packages.r
 COPY requirements.txt /requirements.txt
