@@ -9,4 +9,5 @@ RUN wget https://download2.rstudio.org/rstudio-server-rhel-1.1.383-x86_64.rpm &&
 EXPOSE 8787
 
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-CMD ['/start-rserver.sh']
+
+CMD ["./start-rserver.sh"]
